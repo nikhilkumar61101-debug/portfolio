@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 95px;
+}
+
+body {
+    line-height: 1.6;
+    background-color:#06002C;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000;
+    background-color:#06002C;
+    box-shadow: 0 10px 20px rgba(129, 128, 128, 0.4);
+}
+.navbar h2 a {
+  color: #75F94C;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+}
+.logo {
+    cursor: pointer;
+    padding: 10px 50px;
+}
+.logo h2{
+
+    font-size: 3rem;
+    line-height: 1.1;
+
+}
+.menu {
+    display: flex;
+    list-style: none;
+    margin:10px;
+    padding: 0 50px;
+}
+.menu li {
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    padding: 0 10px;
+    color : #FFFFFF;
+}
+.menu li:hover {
+    transform: translateY(-5px);
+}
+
+.navbar, .handles {
+    will-change: transform;
+}
+section {
+    will-change: transform;
+}
+
+
+/* hero page */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11.29rem 5%;
+    gap: 50px;
+    background-color:#06002C;
+}
+.intro h2 {
+    font-size: 2rem;
+    color : #FFFFFF;
+    font-weight: 550;
+}
+.intro h1 {
+    font-size: 4rem;
+    font-weight: 550;
+    color : #FFFFFF;
+}
+.intro h3 {
+    font-weight: 550;
+    font-size: 2rem;
+    color : #FFFFFF;
+}
+.namecolor { color: #75F94C; }
+.skillcolor { color: goldenrod; }
+.button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: gold;
+    color: #212529;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {background-color: goldenrod;}
+.image-0 img {
+    border-radius: 50%;
+    border : 5px solid #75F94C;
+    cursor: pointer;
+    box-shadow: 50px 50px 35px rgba(0,0,0,0.2);
+    max-width: 100%;
+    transition: 0.3s;
+}
+.image-0 img:hover {
+    transform: translateX(10px) translateY(10px);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+.handles {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color:#06002C;
+    position: sticky !important;
+    bottom: 0 !important;
+    z-index: 1000;
+}
+
+.handles *{
+    font-size: 1.4rem;
+}
+/*about me*/
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 13rem 5%;
+    gap: 50px;
+    font-size: 1.25rem;
+}
+.image-1 img {
+    border-radius: 50%;
+    border : 5px solid #75F94C;
+    cursor: pointer;
+    box-shadow: 50px 50px 35px rgba(0,0,0,0.2);
+    max-width: 100%;
+    transition: 0.3s;
+}
+.image-1 img:hover {
+    transform: translateX(10px) translateY(10px);
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+.namecolor-1{ color:red}
+/* skill */
+.skill-section{
+    align-items: end;
+    padding: 4rem 5%;
+    background-color:#06002C;
+    color: #FFFFFF;    
+}
+.skills-heading{
+    display: flex;
+    gap:15px;
+    padding:25px 0;
+}
+.skills-heading h2 {
+    align-content: end;
+    font-size: 3rem;
+    color: #75F94C;
+    font-weight: 550;
+}
+
+.content{
+    font-size: 1.25rem;
+}
+.Skills {
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+} 
+
+.Skills *{
+    padding: 1.0rem 0;
+}
+
+.image-2, .image-3, .image-4{
+    display: flex;
+    justify-content: center;
+}
+
+.Skills * h3{
+    color:gold;
+}
+/*Experience & Education*/
+.Education-section{
+    padding: 11rem 5%;
+    align-items:first baseline;
+}
+
+.Bachelor, .high-school{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Education-section h2{
+    font-size:3rem;
+    font-weight: 550;
+    padding-bottom:3rem;
+}
+.Education-section h3{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.Education-section p{
+    font-size: 1.1rem;
+    font-weight: 390;
+}
+.year{
+    font-size:1.6rem;
+    font-weight: 500;
+}
+/* Footer */
+
+.footer{
+    background-color:#06002C;
+    color : #FFFFFF;
+}
+
+.contacts h3{
+    color: #75F94C;
+    font-weight: 550;
+    font-size: 2rem;
+}
+.contacts{
+    padding: 1rem 5%; 
+    line-height: 2rem ;  
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    background-color:#06002C;
+    color : #FFFFFF;
+}
